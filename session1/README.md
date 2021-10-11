@@ -99,4 +99,4 @@ Install kubeadm and join worker node `worker-1` into the cluster we just deploye
 
 ## Disclaimer
 
-This vagrant file used in this session is provided by a port of kubernetes hard way to vagrant, but I couldn't find the original repo. As soon as I find it, I'll add it as a reference.
+This vagrant file used in this session is provided by a port of kubernetes hard way to vagrant by @mmumshad (https://github.com/mmumshad/kubernetes-the-hard-way)
