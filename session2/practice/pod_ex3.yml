@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: box-pod
+spec:
+  containers:
+  - name: box
+    image: busybox
+    command:
+     - "sleep"
+    args:
+     - "1000"
+    imagePullPolicy: IfNotPresent
+  nodeSelector:
+    disktype: simple
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+        - matchExpressions:
+          - key: custom.label.io/environment
+            operator: In
+            values:
+            - development
+            - local
