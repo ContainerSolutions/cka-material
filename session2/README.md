@@ -2,7 +2,7 @@
 
 Session video link: https://drive.google.com/file/d/1MXbktXdN87y3f0Jp4G4EdgY1LV8D4Axy/view?usp=drive_web
 
-Slide Share: TO BE ADDED
+Slide Share: https://docs.google.com/presentation/d/1KqX4npvxOnZKG2ZBLpc5YShADzr5cAUPnC2gHI0pxC8/edit?usp=sharing
 
 Links used during the session:
 
