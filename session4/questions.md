@@ -21,4 +21,16 @@ Check if the permissions are appropriate.
 Check when certificates expire on the cluster using kubeadm.
 
 renew apiserver certificate
+
+
 ###
+
+Create a ConfigMap with a custom index.html(https://github.com/ContainerSolutions/k8s-hackathon-files/blob/main/session_2/index.html) file
+- Configmap name: front-end-content
+- Configmap content: index.html file
+
+Configure an nginx deployment with three replicas that mounts the configmap on `/usr/share/nginx/html`
+
+Create a service called `nginx-service` that exposes this deployment as a `ClusterIp`
+
+Create an ingress that exposes `nginx-service` on port 80
